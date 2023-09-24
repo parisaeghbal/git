@@ -161,6 +161,12 @@ div.products>div.product>a{
   height: 40px;
   background-color: #2b2b2b;
 }
+.footer>p{
+  text-align: center;
+  color: whitesmoke;
+  font-size: 14px;
+  text-transform: capitalize;
+}
 
 
    
