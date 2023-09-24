@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.css">
+   
+</head>
+<body>
+    <!--menu-->
+    <label for="mobile">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+    <input type="radio" id="mobile" name="mobile">
+    <input type="radio"  id="close" name="mobile">
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">videos</a></li>
+            </ul>
+        </nav>
+        <label for="close">&times;</label>
+    </div>
+     <!--menu-->
+     <!--slider-->
+     <div class="slider">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./image/2.jpg" alt="war"></div>
+              <div class="swiper-slide"><img src="./image/1.webp" alt="war"></div>
+              <div class="swiper-slide"><img src="./image/3.jpg" alt="war"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+     </div>
+      <!-- end slider-->
+      <!--products-->
+      <div class="products">
+        <div class="product">
+            <img src="./image/1.webp" alt="war">
+            <h1>hello-word</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, veniam cumque! Minus pariatur nulla architecto repellendus consequatur odit vitae iste alias quidem impedit. Excepturi inventore temporibus amet provident, similique sint.
+
+            </p>
+            <a href="#">read-more</a>
+        </div>
+        <div class="product">
+            <img src="./image/1.webp" alt="war">
+            <h1>hello-word</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, veniam cumque! Minus pariatur nulla architecto repellendus consequatur odit vitae iste alias quidem impedit. Excepturi inventore temporibus amet provident, similique sint.
+
+            </p>
+            <a href="#">read-more</a>
+        </div>
+        <div class="product">
+            <img src="./image/1.webp" alt="war">
+            <h1>hello-word</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, veniam cumque! Minus pariatur nulla architecto repellendus consequatur odit vitae iste alias quidem impedit. Excepturi inventore temporibus amet provident, similique sint.
+
+            </p>
+            <a href="#">read-more</a>
+        </div>
+      </div>
+      <!--footer-->
+      <div class="footer"></div>
+      <!--footer-->
+     
+        <!-- end-products-->
+      <script src="./swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 0,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+</body>
+   
